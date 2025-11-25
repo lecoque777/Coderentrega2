@@ -189,6 +189,8 @@ border-radius: 8px; /*BOXMODEL*/
     margin: 0 auto; /* BOXMODEL */
     justify-items: center; /* GRID */
     align-items: start; /* GRID */
+    overflow-x: auto;
+    animation: spin 5s infinite linear;
 }
 
 .feed-item {
@@ -206,6 +208,10 @@ border-radius: 8px; /*BOXMODEL*/
     height: 350px;
     object-fit: cover;
     transition: transform 0.4s ease;
+}
+@keyframes spin {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-100px); }
 }
 
 /* Efecto hover */
